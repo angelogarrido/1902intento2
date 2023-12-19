@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Ejemplo de HTML y CSS con Clases</title>
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1>Mi Sitio Web</h1>
+    <p>Bienvenido a mi sitio web.</p>
+  </header>
+
+  <nav class="barra-navegacion">
+    <ul>
+      <li><a href="#" class="enlace-navegacion">Inicio</a></li>
+      <li><a href="#" class="enlace-navegacion">Acerca de</a></li>
+      <li><a href="#" class="enlace-navegacion">Servicios</a></li>
+      <li><a href="#" class="enlace-navegacion">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="seccion">
+      <h2>Sección 1</h2>
+      <p>Este es un párrafo de la sección 1.</p>
+      <img src="imagen1.jpg" alt="Descripción de la Imagen 1">
+    </section>
+
+    <section class="seccion">
+      <h2>Sección 2</h2>
+      <ul class="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+      <p>Este es otro párrafo de la sección 2.</p>
+    </section>
+
+   
+    <h2>Tabla Mediana</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>modelo</th>
+          <th>año</th>
+          <th>precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xrt</td>
+          <td>2022</td>
+          <td>100.000</td>
+        </tr>
+        <tr>
+          <td>trx</td>
+          <td>2023</td>
+          <td>200.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td >300.000</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+
+    <section class="seccion formulario">
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4
+        " placeholder="Escribe tu mensaje aquí" required></textarea>
+
+        <button type="submit" id="enviar-btn" data-mensaje="Enviando datos" onclick="enviarDatos()">Enviar</button>
+        <button type="button" id="limpiar-btn" data-mensaje="Limpiando campos" onclick="limpiarCampos()">Limpiar</button>
+        <button type="button" id="cancelar-btn" data-mensaje="Operación cancelada" disabled>Cancelar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
